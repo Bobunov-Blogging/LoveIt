@@ -10,8 +10,12 @@ description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags:
+  - ""
+categories:
+  - ""
+series:
+  - ""
 
 featuredImage: ""
 featuredImagePreview: ""

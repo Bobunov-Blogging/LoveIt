@@ -24,6 +24,9 @@ other = "Tag"
 [tags]
 other = "Tags"
 
+[series]
+other = "Series"
+
 [category]
 other = "Category"
 
@@ -110,8 +113,11 @@ other = "Contents"
 [publishedOnDate]
 other = "published on {{ .Date }}"
 
+[includedInSeries]
+other = "part of the series {{ .Series }}"
+
 [includedInCategories]
-other = "included in {{ .Categories }}"
+other = "filed under {{ .Categories }}"
 
 [wordCount]
 one = "One word"

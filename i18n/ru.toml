@@ -25,6 +25,9 @@ other = "Тэг"
 [tags]
 other = "Тэги"
 
+[series]
+other = "Серия"
+
 [category]
 other = "Категория"
 
@@ -114,8 +117,11 @@ other = "Содержание"
 [publishedOnDate]
 other = "Опубликовано {{ .Date }}"
 
+[includedInSeries]
+other = "часть серии {{ .Series }}"
+
 [includedInCategories]
-other = "включен в {{ .Categories }}"
+other = "опубликовано в категории {{ .Categories }}"
 
 [wordCount]
 one = "Одно слово"

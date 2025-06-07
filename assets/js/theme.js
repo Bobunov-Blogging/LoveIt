@@ -288,6 +288,9 @@ var Theme = /*#__PURE__*/function () {
                     this.field('categories', {
                       boost: 20
                     });
+                    this.field('series', {
+                      boost: 20
+                    });
                     this.field('content', {
                       boost: 10
                     });

@@ -47,6 +47,17 @@
                         {{- dict "Categories" . | T "includedInCategories" | safeHTML -}}
                     </span>
                 {{- end -}}
+
+                {{- $series := slice -}}
+                {{- range .Params.series -}}
+                    {{- $serie := partialCached "function/path.html" . . | printf "/series/%v" | $.Site.GetPage -}}
+                    {{- $series = $series | append (printf `<a href="%v"><i class="far fa-folder fa-fw" aria-hidden="true"></i>%v</a>` $serie.RelPermalink $serie.Title) -}}
+                {{- end -}}
+                {{- with delimit $series "&nbsp;" -}}
+                    &nbsp;<span class="post-series">
+                        {{- dict "Series" . | T "includedInSeries" | safeHTML -}}
+                    </span>
+                {{- end -}}
             </div>
             <div class="post-meta-line">
                 {{- with .Site.Params.dateformat | default "2006-01-02" | .PublishDate.Format -}}
